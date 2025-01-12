@@ -11,11 +11,54 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Profile card component</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
+    <!-- Global Container -->
+    <div
+      class="max-w-7xl flex flex-col justify-center mx-auto bg-green-300 min-h-screen"
+    >
+      <!-- card Container -->
+      <div
+        class="flex flex-col rounded-xl items-center bg-white max-w-sm mx-auto overflow-hidden pb-6"
+      >
+        <!-- images -->
+        <img src="images/bg-pattern-card.svg" alt="" class="w-full" />
+        <img
+          src="images/image-victor.jpg"
+          alt=""
+          class="transform -translate-y-8 w-20 rounded-full"
+        />
+
+        <div class="flex flex-col  items-center space-y-4">
+          <!-- titles -->
+          <h1 class="text-xl font-bold">
+            Victor Crest <span class="text-lg text-gray-400">26</span>
+          </h1>
+          <h2 class="text-lg text-gray-400">London</h2>
+          <!-- last containetr -->
+          <div class="flex space-x-6">
+            <!-- item 1 -->
+            <div class="flex flex-col items-center">
+              <h1 class="text-xl font-bold">80K</h1>
+              <h2 class="text-lg text-gray-400">Followers</h2>
+            </div>
+
+            <!-- item 2 -->
+            <div class="flex flex-col items-center">
+              <h1 class="text-xl font-bold">803K</h1>
+              <h2 class="text-lg text-gray-400">Likes</h2>
+            </div>
+
+            <!-- item 3 -->
+            <div class="flex flex-col items-center">
+              <h1 class="text-xl font-bold">1.4k</h1>
+              <h2 class="text-lg text-gray-400">Photos</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
